@@ -1,0 +1,222 @@
+/* Keeping custom font and background */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+    /* Prevent scrollbars from oversized shapes */
+}
+
+/* The expanding background for the transition */
+.color-transition-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f1f5f9;
+    /* Off-white color (Tailwind Slate-100) */
+    z-index: 0;
+    --clip-radius: 0%;
+    /* Controlled by JavaScript */
+    clip-path: circle(var(--clip-radius) at 50% 50%);
+}
+
+/* Ensure content and shapes are layered correctly above the backgrounds */
+main,
+section,
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-scrolled {
+    background-color: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+}
+
+.shape {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.025);
+    z-index: 1;
+    /* Above background, below content */
+    pointer-events: none;
+    opacity: 0;
+    transform: rotate(60deg) scale(0.7);
+    transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Styling for shapes */
+.shape-1 {
+    width: 65vw;
+    height: 65vh;
+    top: -20%;
+    left: -20%;
+}
+
+.shape-2 {
+    width: 60vw;
+    height: 60vh;
+    bottom: -25%;
+    right: -15%;
+}
+
+.shape-3 {
+    width: 50vw;
+    height: 50vh;
+    bottom: -10%;
+    left: -15%;
+}
+
+/* Shapes for the new light background need to be darker to be visible */
+.shape-4 {
+    width: 40vw;
+    height: 70vh;
+    top: -15%;
+    right: -10%;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.shape-5 {
+    width: 35vw;
+    height: 35vh;
+    bottom: -10%;
+    left: -5%;
+    background-color: rgba(0, 0, 0, 0.02);
+    transition-delay: 200ms;
+}
+
+.shape-6 {
+    width: 50vw;
+    height: 50vh;
+    top: -15%;
+    left: -15%;
+}
+
+.shape-7 {
+    width: 40vw;
+    height: 40vh;
+    bottom: -20%;
+    right: -10%;
+    transition-delay: 200ms;
+}
+
+.shape-8 {
+    width: 60vw;
+    height: 60vh;
+    top: -10%;
+    left: -15%;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.shape-9 {
+    width: 45vw;
+    height: 45vh;
+    bottom: -15%;
+    right: -10%;
+    background-color: rgba(0, 0, 0, 0.02);
+    transition-delay: 200ms;
+}
+
+.shape-10 {
+    width: 55vw;
+    height: 55vh;
+    top: -20%;
+    right: -15%;
+}
+
+.shape-11 {
+    width: 40vw;
+    height: 40vh;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 200ms;
+}
+
+.shape-12 {
+    width: 40vw;
+    height: 70vh;
+    top: -15%;
+    right: -10%;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.shape-13 {
+    width: 35vw;
+    height: 35vh;
+    bottom: -10%;
+    left: -5%;
+    background-color: rgba(0, 0, 0, 0.02);
+    transition-delay: 200ms;
+}
+
+
+.shape.visible {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+/* Scroll Reveal Animation */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    filter: blur(5px);
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        filter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal.delay-200 {
+    transition-delay: 200ms;
+}
+
+.scroll-reveal.delay-400 {
+    transition-delay: 400ms;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Invisible triggers for the background color changes */
+#transition-trigger-1,
+#transition-trigger-2,
+#transition-trigger-3,
+#transition-trigger-4,
+#transition-trigger-5 {
+    position: relative;
+    height: 50vh;
+    width: 10px;
+    pointer-events: none;
+}
+
+/* Add this to your style.css */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Optional: Smooth out the snap behavior */
+#projects .flex {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}

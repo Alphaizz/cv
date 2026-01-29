@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfaizz - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body class="text-gray-100">
+    <div class="color-transition-bg"></div>
+
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+
+    <header class="fixed w-full top-0 left-0 z-20">
+        <nav class="container mx-auto px-6 sm:px-10 py-8 flex justify-between items-center">
+            <div>
+                <img src="images/logo.png" alt="Alfaizz Logo" class="h-8 w-auto">
+            </div>
+            <ul class="hidden sm:flex space-x-12">
+                <li><a href="#" class="hover:text-gray-400 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400 transition-colors">About</a></li>
+                <li><a href="#skills" class="hover:text-gray-400 transition-colors">Skills</a></li>
+                <li><a href="#education" class="hover:text-gray-400 transition-colors">Education</a></li>
+                <li><a href="#projects" class="hover:text-gray-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-bold">Hi ! I am Alfaizz</h1>
+        <p class="text-xl md:text-2xl text-gray-400 mt-2">You can call me Alfa</p>
+    </main>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+        <div class="shape shape-3"></div>
+        <h2 class="scroll-reveal text-4xl md:text-6xl font-medium">I am an undergraduate student from mercu buana</h2>
+    </section>
+
+    <div id="transition-trigger-1"></div>
+
+    <section id="about"
+        class="min-h-screen py-20 flex flex-col justify-center items-center px-6 overflow-hidden bg-transparent text-gray-900">
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                <div class="scroll-reveal w-full aspect-square rounded-2xl shadow-lg overflow-hidden">
+                    <img src="images/prof.jpg" alt="Alfaizz Profile" class="w-full h-full object-cover">
+                </div>
+
+                <div class="text-center md:text-left">
+                    <h2 class="scroll-reveal text-5xl md:text-6xl font-bold mb-6">About Me</h2>
+                    <p class="scroll-reveal delay-200 text-lg md:text-xl text-gray-700">
+                        Hello! I'm Alfaizz, a Computer Science undergrad at Mercu Buana University specializing in AI
+                        and full-stack development. I build impactful applications, from an AI chatbot to
+                        predictive health models. I merge deep technical skill withstrong communication and
+                        leadership. I'm looking for an opportunity to solve complex problems—let's connect!
+                    </p>
+                    <div class="scroll-reveal delay-400 mt-10">
+                        <a href="cvport.pdf" download="Alfaizz_CV.pdf" 
+                            class="group inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white transition-all duration-300 rounded-full bg-gray-900/80 hover:bg-gray-900 backdrop-blur-sm shadow-lg hover:shadow-2xl hover:-translate-y-1 border border-white/10">
+            
+                            <svg class="w-5 h-5 mr-2 transition-transform duration-300 group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            My CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="transition-trigger-2"></div>
+
+    <section id="skills"
+        class="min-h-screen py-20 flex flex-col justify-center items-center px-6 overflow-hidden bg-transparent text-gray-100">
+        <div class="shape shape-6"></div>
+        <div class="shape shape-7"></div>
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="scroll-reveal text-5xl md:text-6xl font-bold mb-16">My Skills</h2>
+
+            <div class="scroll-reveal">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-8 text-gray-300">Programming Languages</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-gray-300 text-2xl">
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-python-plain h-16 w-16 mb-2"></i><span
+                            class="text-lg font-medium">Python</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-mysql-plain h-16 w-16 mb-2"></i><span class="text-lg font-medium">SQL</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-cplusplus-plain h-16 w-16 mb-2"></i><span
+                            class="text-lg font-medium">C++</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-typescript-plain h-16 w-16 mb-2"></i><span
+                            class="text-lg font-medium">TypeScript</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-android-plain h-16 w-16 mb-2"></i>
+                        <span class="text-lg font-medium">Mobile Dev</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-reveal mt-16">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-8 text-gray-300">Full-Stack Development</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 text-gray-300 text-2xl">
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-html5-plain h-16 w-16 mb-2"></i><span class="text-lg font-medium">HTML</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-css3-plain h-16 w-16 mb-2"></i><span class="text-lg font-medium">CSS</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-javascript-plain h-16 w-16 mb-2"></i><span
+                            class="text-lg font-medium">JavaScript</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center p-4 bg-black/20 rounded-lg transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                        <i class="devicon-nodejs-plain h-16 w-16 mb-2"></i><span
+                            class="text-lg font-medium">NodeJS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="transition-trigger-3"></div>
+
+    <section id="education"
+        class="min-h-screen py-20 flex flex-col justify-center items-center px-6 overflow-hidden bg-transparent text-gray-900">
+        <div class="shape shape-8"></div>
+        <div class="shape shape-9"></div>
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="scroll-reveal text-5xl md:text-6xl font-bold mb-16">Education</h2>
+            <div class="relative">
+                <div class="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gray-300"></div>
+
+                <div class="scroll-reveal relative mb-12">
+                    <div class="absolute left-1/2 -translate-x-1/2 mt-1.5 w-4 h-4 bg-gray-800 rounded-full z-10"></div>
+                    <div class="w-full md:w-1/2 md:ml-auto md:pl-12">
+                        <div class="p-6 bg-gray-200/70 rounded-lg shadow-lg text-left">
+                            <h3 class="text-xl font-bold">Mercu Buana University (International class)</h3>
+                            <p class="text-md text-gray-600 mb-2">Jakarta, Indonesia | Aug 2023 - Present</p>
+                            <ul class="text-left text-gray-700 list-disc list-inside">
+                                <li>Current GPA: 3.80/4.00</li>
+                                <li>Bachelor's Degree in Informatics</li>
+                                <li>Data Science Concentration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-reveal relative mb-12">
+                    <div class="absolute left-1/2 -translate-x-1/2 mt-1.5 w-4 h-4 bg-gray-800 rounded-full z-10"></div>
+                    <div class="w-full md:w-1/2 md:mr-auto md:pr-12 md:text-right">
+                        <div class="p-6 bg-gray-200/70 rounded-lg shadow-lg text-left inline-block">
+                            <h3 class="text-xl font-bold">Universitas Gadjah Mada</h3>
+                            <p class="text-md text-gray-600 mb-2">Yogyakarta, Indonesia | Aug 2025 - Dec 2025</p>
+                            <ul class="text-left text-gray-700 list-disc list-inside">
+                                <li>1-Semester Exchange Programme</li>
+                                <li>Worked on a variety of projects</li>
+                                <li>Score achieved: 3.60/4.00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="transition-trigger-4"></div>
+
+    <section id="projects" class="min-h-screen py-20 flex flex-col justify-center items-center px-6 overflow-hidden bg-transparent text-gray-100">
+    <div class="shape shape-10"></div>
+    <div class="shape shape-11"></div>
+    <div class="container mx-auto max-w-6xl text-center">
+        <h2 class="scroll-reveal text-5xl md:text-6xl font-bold mb-16">My Projects</h2>
+        
+        <div class="flex overflow-x-auto gap-8 pb-10 px-4 snap-x snap-mandatory scrollbar-hide text-left">
+            
+            <div class="scroll-reveal w-[320px] md:w-[400px] flex-shrink-0 snap-center bg-black/20 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                <img src="images/gourme.jpg" alt="Gourmet Place" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">The Gourmet Place</h3>
+                    <p class="text-gray-400 mb-4">A restaurant website with features like login, menu, and an AI assistant.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">React</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Supabase</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">AI</span>
+                    </div>
+                    <a href="https://github.com/Alphaizz/cloud_compute" class="text-blue-400 hover:underline" target="_blank">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="scroll-reveal delay-200 w-[320px] md:w-[400px] flex-shrink-0 snap-center bg-black/20 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                <img src="images/diabetes.jpg" alt="Diabetes Prediction" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Diabetes Prediction</h3>
+                    <p class="text-gray-400 mb-4">Predicts diabetes and identifies key health risk factors using Machine Learning.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">ML</span>
+                    </div>
+                    <a href="https://github.com/Alphaizz/Diabetes-Prediction" class="text-blue-400 hover:underline" target="_blank">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="scroll-reveal w-[320px] md:w-[400px] flex-shrink-0 snap-center bg-black/20 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                <img src="images/PBC.jpg" alt="PBC" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Web3 donation app</h3>
+                    <p class="text-gray-400 mb-4">TrustFlow is a blockchain-powered charity platform for transparent ETH donations.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Solidity</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Web3.js</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Ethereum</span>
+                    </div>
+                    <a href="https://github.com/Alphaizz/Donation_PBC" class="text-blue-400 hover:underline">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="scroll-reveal delay-200 w-[320px] md:w-[400px] flex-shrink-0 snap-center bg-black/20 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                <img src="images/debate.jpg" alt="Debate" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">AI Debate Researcher</h3>
+                    <p class="text-gray-400 mb-4">Automated engine leveraging NLP models to summarize real-time news for debaters.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">FastAPI</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">HuggingFace</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">React</span>
+                    </div>
+                    <a href="#" class="text-blue-400 hover:underline">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+            <div class="scroll-reveal w-[320px] md:w-[400px] flex-shrink-0 snap-center bg-black/20 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:bg-black/40 hover:scale-105">
+                <img src="images/insurance.jpg" alt="Insurance Risk Segmentation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Insurance Risk Segmentation</h3>
+                    <p class="text-gray-400 mb-4">An end-to-end Machine Learning model built from scratch to optimize insurance premiums by segmenting health risks through K-Means clustering of real-world physical activity data.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Python</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">K-Means</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Data Analytics</span>
+                        <span class="bg-gray-700 text-gray-300 text-sm font-medium px-2.5 py-0.5 rounded">Mathematics</span>
+                    </div>
+                    <a href="https://github.com/Alphaizz/Insurance" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <p class="text-gray-500 text-sm mt-4 animate-pulse">Scroll horizontally to see more &rarr;</p>
+    </div>
+</section>
+
+    <div id="transition-trigger-5"></div>
+
+    <section id="contact"
+        class="min-h-screen py-20 flex flex-col justify-center items-center px-6 overflow-hidden bg-transparent text-gray-900">
+        <div class="shape shape-12"></div>
+        <div class="shape shape-13"></div>
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="scroll-reveal text-5xl md:text-6xl font-bold mb-6">Get In Touch</h2>
+            <p class="scroll-reveal delay-200 text-lg md:text-xl text-gray-700 mb-8">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+            </p>
+            <div class="scroll-reveal delay-400 flex justify-center items-center space-x-8">
+                <a href="https://www.linkedin.com/in/alfaizzda/"
+                    class="text-gray-700 hover:text-gray-900 transition-colors" aria-label="LinkedIn">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/alphaizz_?igsh=aDUycWo0bWx0ZjNr&utm_source=qr"
+                    class="text-gray-700 hover:text-gray-900 transition-colors" aria-label="Instagram">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z" />
+                    </svg>
+                </a>
+                <button id="open-form-btn" class="text-gray-700 hover:text-gray-900 transition-colors"
+                    aria-label="Email">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 bg-transparent text-gray-700 text-sm">
+        <p>&copy; 2026 Alfaizz. All Rights Reserved.</p>
+    </footer>
+
+    <div id="contact-form-modal"
+        class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden justify-center items-center z-50 p-4">
+        <div class="bg-white text-gray-900 p-8 rounded-lg shadow-xl w-full max-w-md relative">
+            <button id="close-form-btn"
+                class="absolute top-2 right-4 text-3xl font-bold text-gray-500 hover:text-gray-800 transition-colors">&times;</button>
+            <h2 class="text-3xl font-bold mb-6 text-center">Send a Message</h2>
+
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-800 focus:border-gray-800">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-800 focus:border-gray-800">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-800 focus:border-gray-800"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition-colors">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
